@@ -19,6 +19,5 @@ X_train, X_test, y_train, y_test = train_test_split(
 clf = LogisticRegression(max_iter=1000)
 clf.fit(X_train, y_train)
 
-
 y_pred = clf.predict(X_test)
-print(classification_report(y_test, y_pred))
+print(classification_report(y_test, y_pred)) 
